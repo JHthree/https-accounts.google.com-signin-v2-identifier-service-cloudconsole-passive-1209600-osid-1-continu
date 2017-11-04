@@ -1,7 +1,9 @@
 package scumbhackathon.lifeisruff;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -43,4 +45,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
+
+    public void sendMessage(View view) {
+        Intent startNewActivity = new Intent(this, LostActivity.class);
+        startActivity(startNewActivity);
+    }
+
+    public void sendMessage1(View view) {
+        Intent startNewActivity = new Intent(this, FoundActivity.class);
+        startActivity(startNewActivity);
+    }
+
 }
