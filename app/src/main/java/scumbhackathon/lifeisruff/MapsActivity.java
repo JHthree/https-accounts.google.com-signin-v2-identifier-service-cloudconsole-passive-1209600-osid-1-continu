@@ -1,5 +1,6 @@
 package scumbhackathon.lifeisruff;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -46,13 +47,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
-    public void sendMessage(View view) {
+    public void moveLostForm(View view) {
         Intent startNewActivity = new Intent(this, LostActivity.class);
         startActivity(startNewActivity);
     }
 
-    public void sendMessage1(View view) {
+    public void moveFoundForm(View view) {
         Intent startNewActivity = new Intent(this, FoundActivity.class);
+        startActivity(startNewActivity);
+    }
+
+    public void moveSearch(View view) {
+        Intent startNewActivity = new Intent(this, SearchActivity.class);
         startActivity(startNewActivity);
     }
 

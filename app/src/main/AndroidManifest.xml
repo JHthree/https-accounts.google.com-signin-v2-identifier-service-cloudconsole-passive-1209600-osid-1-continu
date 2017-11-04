@@ -39,7 +39,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FoundActivity" />
-        <activity android:name=".LostActivity"></activity>
+        <activity android:name=".LostActivity" />
+        <activity android:name=".SearchActivity"></activity>
     </application>
 
 </manifest>

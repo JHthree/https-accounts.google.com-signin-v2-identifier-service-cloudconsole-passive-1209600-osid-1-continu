@@ -6,4 +6,67 @@
     android:layout_height="match_parent"
     tools:context="scumbhackathon.lifeisruff.LostActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:padding="10dp"
+            android:paddingEnd="10dp"
+            android:onClick="moveMap"
+            android:text="Map"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <Button
+            android:id="@+id/lostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/foundButton"
+            android:layout_alignBottom="@+id/foundButton"
+            android:layout_toEndOf="@+id/foundButton"
+            android:layout_weight="1"
+            android:width="100dp"
+
+            android:padding="10dp"
+            android:paddingEnd="10dp"
+            android:text="Lost" />
+
+        <Button
+            android:id="@+id/foundButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mapButton"
+            android:layout_alignBottom="@+id/mapButton"
+            android:layout_toEndOf="@+id/mapButton"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:onClick="moveFoundForm"
+            android:padding="10dp"
+            android:paddingEnd="10dp"
+            android:text="Found" />
+
+        <Button
+            android:id="@+id/evacuateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lostButton"
+            android:layout_alignBottom="@+id/lostButton"
+            android:layout_toEndOf="@+id/lostButton"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:onClick="moveSearch"
+            android:padding="10dp"
+            android:paddingEnd="10dp"
+            android:text="Search" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
