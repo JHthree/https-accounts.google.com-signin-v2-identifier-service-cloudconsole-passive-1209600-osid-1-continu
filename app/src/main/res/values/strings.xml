@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">lifeisruff</string>
     <string name="title_activity_maps">Map</string>
+
+
+
+
+        <string name="animalPick">Choose your lost animal</string>
+
+        <string-array name="Species_Array">
+            <item>Choose your lost animal</item>
+            <item>dog</item>
+            <item>cat</item>
+            <item>bird</item>
+            <item>falcon</item>
+            <item>reptile</item>
+            <item>rodent</item>
+            <item>livestock</item>
+            <item>other</item>
+        </string-array>
+
+
 </resources>
