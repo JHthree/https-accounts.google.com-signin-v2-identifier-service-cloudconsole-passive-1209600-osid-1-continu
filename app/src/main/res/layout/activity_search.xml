@@ -6,11 +6,14 @@
     android:layout_height="match_parent"
     tools:context="scumbhackathon.lifeisruff.SearchActivity">
 
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
             android:id="@+id/mapButton"
@@ -19,9 +22,9 @@
             android:layout_alignParentBottom="true"
             android:layout_weight="1"
             android:width="100dp"
+            android:onClick="moveMap"
             android:padding="10dp"
             android:paddingEnd="10dp"
-            android:onClick="moveMap"
             android:text="Map"
             tools:layout_editor_absoluteY="20dp" />
 
@@ -66,6 +69,23 @@
             android:padding="10dp"
             android:paddingEnd="10dp"
             android:text="Search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"/>
 
     </LinearLayout>
 

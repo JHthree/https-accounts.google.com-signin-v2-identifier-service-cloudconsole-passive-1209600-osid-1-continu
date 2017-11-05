@@ -8,7 +8,7 @@
         <string name="animalPick">Choose your lost animal</string>
 
         <string-array name="Species_Array">
-            <item>Choose your lost animal</item>
+            <item>Animal Species</item>
             <item>dog</item>
             <item>cat</item>
             <item>bird</item>
